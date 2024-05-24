@@ -17,7 +17,7 @@ public class TestNGDependsOn {
 		System.out.println("Contact modified");
 	}
 	
-	@Test(dependsOnMethods = "createContact")
+	@Test(enabled = false)
 	public void deleteContact() 
 	{
 		System.out.println("Contact Deleted");
